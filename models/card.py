@@ -18,8 +18,9 @@ class Card:
         }
 
 
-@classmethod
-def from_dict(cls, data):
+
+    @classmethod
+    def from_dict(cls, data):
         return cls(
             card_number=data["card_number"],
             cvc=data["cvc"],
@@ -27,3 +28,5 @@ def from_dict(cls, data):
             pin_code=data["pin_code"]
         )
         
+
+
