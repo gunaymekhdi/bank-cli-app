@@ -46,5 +46,5 @@ class Account:
             balance=data["balance"],
             currency=data["currency"],
             cards=[Card.from_dict(c) for c in data.get("cards", [])]
-        )
+        )    
     
