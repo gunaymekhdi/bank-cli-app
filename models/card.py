@@ -17,8 +17,6 @@ class Card:
               "pin_code": self.pin_code
         }
 
-
-
     @classmethod
     def from_dict(cls, data):
         return cls(

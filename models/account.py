@@ -28,8 +28,6 @@ class Account:
         else:
             self.balance-=amount
  
-
-
     def to_dict(self):
         return{
             "account_number": self.account_number,
