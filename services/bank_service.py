@@ -1,5 +1,5 @@
 from models.account import Account
-from models.transaction import Transactionq97
+from models.transaction import Transaction
 
 from models.card import Card
 
@@ -9,7 +9,7 @@ class BankService:
         self.auth_service = auth_service
 
 
-    def create_account(self, acoount_number, currency="AZN"):
+    def create_account(self, account_number, currency="AZN"):
 
         current_user= self.authservice.get_current_user
         if not current_user:
